@@ -12,9 +12,10 @@ var lighthouseRock = {
 };
 
 // remove bulbs property from lighthouseRock
-
+delete lighthouseRock.bulbs;
 
 // add weaponBulbs property to lighthouseRock
-
+lighthouseRock.weaponBulbs = superBlinders;
 
 // log the correct weaponBulbs array value to the console
+console.log(lighthouseRock.weaponBulbs[2][0]);
