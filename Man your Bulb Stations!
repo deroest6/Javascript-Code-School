@@ -5,21 +5,20 @@ var lighthouseRock = {
   weaponBulbs: superBlinders,
   capacity: 30,
   secretPassageTo: "Underwater Outpost",
-  numRangers: 0
+  numRangers: 3,
+  ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
+  ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
+  ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1}
 };
 
-function addRanger(location, name, skillz, station) {
-  // increment the number of rangers property
-  location.numRangers += 1;
-  // add the ranger<number> property and assign a ranger object
-  location["ranger" + location.numRangers] = {
-    name: name,
-    skillz: skillz,
-    station: station
-  };
+function dontPanic(location) {
+  var list = "Avast, me hearties!\n" +
+             "There be Pirates nearby! Stations!\n";
+
+  // loop through the rangers and append to list
+  
+
+  alert(list);
 }
 
-// call addRanger three times to add the new rangers
-addRanger(lighthouseRock, "Christine Wong", "bomb defusing", 1);
-addRanger(lighthouseRock, "Nick Walsh", "magnification burn", 2);
-addRanger(lighthouseRock, "Drew Barontini", "uppercut launch", 3);
+dontPanic(lighthouseRock);
