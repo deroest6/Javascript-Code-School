@@ -13,10 +13,18 @@ var lighthouseRock = {
 
 function dontPanic(location) {
   var list = "Avast, me hearties!\n" +
-             "There be Pirates nearby! Stations!\n";
+             "There be Pirates nearby! Stations!\n"; 
+                
+              
 
   // loop through the rangers and append to list
-  
+  for (var i = 1; i <= location.numRangers; i++) {
+    var ranger = location["ranger" + i];
+    var name = ranger.name;
+    var superBlinder = location.weaponBulbs[ranger.station -1][0];
+    list += name + ", man the " + superBlinder + "!\n";
+                       
+  }
 
   alert(list);
 }
