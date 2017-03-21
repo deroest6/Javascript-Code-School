@@ -22,7 +22,7 @@ var lighthouseRock = {
 
 
 
-// Calling Function Properties 1
+// Calling Function Properties I
 
 var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
 
@@ -80,5 +80,13 @@ lighthouseRock.addBulb = function (name, wattage) {
 
 addBulb("Flashlight", 5500);
 
+
+// Calling Function Properties II
+
+lighthouseRock.addBulb = function(name, wattage) {
+  this.weaponBulbs.push([name, wattage]);
+};
+
+// call addBulb and pass in the correct arguments
 
 
