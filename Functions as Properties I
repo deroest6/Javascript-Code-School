@@ -1,3 +1,5 @@
+// ******** Functions as Properties I
+
 var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
 
 var lighthouseRock = {
@@ -9,6 +11,7 @@ var lighthouseRock = {
   ranger1: {name: "Nick Walsh", skillz: "magnification burn", station: 2},
   ranger2: {name: "Drew Barontini", skillz: "uppercut launch", station: 3},
   ranger3: {name: "Christine Wong", skillz: "bomb defusing", station: 1},
+  // create addRanger function here
   addRanger: function (name, skillz, station) {
 		this.numRangers++;
   	this["ranger" + this.numRangers] = {
@@ -22,7 +25,7 @@ var lighthouseRock = {
 
 
 
-// Calling Function Properties I
+// ******* Calling Function Properties I
 
 var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
 
@@ -50,7 +53,7 @@ lighthouseRock.addRanger("Jordan Wade", "dual-wield hand crossbow", 4);
 
 
 
-// Functions As Properties II
+// ******** Functions As Properties II
 var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
 
 var lighthouseRock = {
@@ -81,12 +84,15 @@ lighthouseRock.addBulb = function (name, wattage) {
 addBulb("Flashlight", 5500);
 
 
-// Calling Function Properties II
+// ****** Calling Function Properties II
 
 lighthouseRock.addBulb = function(name, wattage) {
   this.weaponBulbs.push([name, wattage]);
 };
 
 // call addBulb and pass in the correct arguments
+lighthouseRock.addBulb("Blasterbright", 5000);
+lighthouseRock.addBulb("Sight Slayer", 1800);
+lighthouseRock.addBulb("Burner of Souls", 7500);
 
 
