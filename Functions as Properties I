@@ -50,9 +50,7 @@ lighthouseRock.addRanger("Jordan Wade", "dual-wield hand crossbow", 4);
 
 
 
-
-// Functions as Properties II
-
+// Functions As Properties II
 var superBlinders = [ ["Firestorm", 4000], ["Solar Death Ray", 6000], ["Supernova", 12000] ];
 
 var lighthouseRock = {
@@ -76,5 +74,11 @@ var lighthouseRock = {
 };
 
 // create addBulb function property here
+lighthouseRock.addBulb = function (name, wattage) {
+  this.weaponBulbs.push([name, wattage]);
+}
+
+addBulb("Flashlight", 5500);
+
 
 
