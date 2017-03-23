@@ -9,6 +9,8 @@ array.prototype.countCattle = function (kind) {
   }
 }
 
+
+
 //********* Prototypes II
 
 Array.prototype.countCattle = function(kind) {
@@ -20,3 +22,8 @@ Array.prototype.countCattle = function(kind) {
   }
   return numKind;
 };
+// Create alert statement here
+alert(canyonCows.countCattle("calf") + valleyCows.countCattle("bull") + forestCows.countCattle("cow"));
+
+
+
