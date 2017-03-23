@@ -1,0 +1,10 @@
+// ******** Prototypes I
+
+array.prototype.countCattle = function (kind) {
+	var numKind = null;
+  for (var i = 0; i < this.length) {
+    if (typeof == kind) {
+      return numKind;
+    }
+  }
+}
