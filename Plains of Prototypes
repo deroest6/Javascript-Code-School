@@ -71,7 +71,13 @@ Array.prototype.countForBreeding = function() {
 };
 
 // set up your numPriorityCows variable
-
+var numPriorityCows =
+	canyonCows.countForBreeding() +
+	valleyCows.countForBreeding() +
+  forestCows.countForBreeding() +
+  badlandsCows.countForBreeding();
+	
 
 
 // alert the correct message with the total
+alert("Herd-merger has indicated " + numPriorityCows + " cows of top breeding priority.");
