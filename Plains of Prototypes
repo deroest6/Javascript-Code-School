@@ -160,3 +160,6 @@ post10.postNum = 10;
 post10.weathervane = "N";
 post10.lightsOn = false;
 
+
+
+// Constructor I
